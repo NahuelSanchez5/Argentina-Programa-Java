@@ -1,17 +1,43 @@
-char letras[] = {'a','b','c','d'};
+package com.mycompany.arg.programa.ejercicios;
 
-int numeros[] = new int[]{1,37,16};
+public class Clase1 {
 
-for(int i=0;i<numeros.length;i++){
-
-if (numeros[i] < 30) {
-
-System.out.println(letras[i+1]);
-
-} else {
-
-System.out.println(numeros[i]);
-
-}
-
+    public static void main(String args[]) {
+       
+        //A) Muestra los números del 5 al 14 \\
+        int numeroInicio = 5;
+        int numeroFin = 14;
+        int numeroEnPantalla = numeroInicio;
+        while (numeroEnPantalla <= numeroFin) {            
+            System.out.println(numeroEnPantalla);
+            numeroEnPantalla = numeroEnPantalla + 1;
+        }
+    }
+    
+    public static void main(String args[]) {
+       
+        // Muestra los números de 2 en 2 \\        
+        int numeroInicio = 5;
+        int numeroFin = 14;
+        int numeroEnPantalla = numeroInicio;
+        while (numeroEnPantalla <= numeroFin) {            
+            System.out.println(numeroEnPantalla);
+            numeroEnPantalla = numeroEnPantalla + 2;
+        }
+    }
+    
+    public static void main(String args[]) {
+       
+            //B) Muestra solo los números pares\\
+        int numeroInicio = 5;
+        int numeroFin = 14;
+        int numeroEnPantalla = numeroInicio;
+        while (numeroEnPantalla <= numeroFin) { 
+            if (numeroEnPantalla % 2 == 0) {
+                System.out.println(numeroEnPantalla);
+            }
+            numeroEnPantalla = numeroEnPantalla + 1;
+        }
+    }
+    
 }
